@@ -1,0 +1,41 @@
+# sumo.conf: Managed by puppet
+#
+<% if @collector_name -%>
+name=<%= @collector_name %>
+<% end -%>
+<% if @email -%>
+email=<%= @email %>
+<% end -%>
+<% if @password -%>
+password=<%= @password %>
+<% end -%>
+<% if @access_id -%>
+accessid=<%= @access_id %>
+<% end -%>
+<% if @access_key -%>
+accesskey=<%= @access_key %>
+<% end -%>
+<% if @sources_file && @config_dir -%>
+sources=<%= @config_dir %>/<%= @sources_file %>
+<% end -%>
+<% if @override -%>
+override=<%= @override %>
+<% end -%>
+<% if @ephemeral -%>
+ephemeral=<%= @ephemeral %>
+<% end -%>
+<% if @clobber -%>
+clobber=<%= @clobber %>
+<% end -%>
+<% if @proxy_host -%>
+proxyHost=<%= @proxy_host %>
+<% end -%>
+<% if @proxy_port -%>
+proxyPort=<%= @proxy_port %>
+<% end -%>
+<% if @proxy_password -%>
+proxyPassword=<%= @proxy_password %>
+<% end -%>
+<% if @proxy_ntlm_domain -%>
+proxyNtlmDomain=<%= @proxy_ntlm_domain %>
+<% end -%>
