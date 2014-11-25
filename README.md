@@ -29,10 +29,30 @@ Or
 
 access_id
 ---
+Access ID generated in the Security page. See [Generating Access API Keys](https://service.sumologic.com/help/Generating_Collector_Installation_API_Keys.htm).
+Recommended to eyaml encrypt this.
 
+* Default: ```null```
+* Type: string
+
+#####Example
+```
+sumo::access_id: MboxeezMzN8S
+```
 
 access_key
 ---
+Access Key generated in the Security page. See [Generating Access API Keys](https://service.sumologic.com/help/Generating_Collector_Installation_API_Keys.htm)
+Recommended to eyaml encrypt this.
+
+* Default: ```null```
+* Type: string
+
+#####Example
+```
+sumo::access_key: dBorwTn8TxF8ofounEXnsQ4hPpuqCzw
+```
+
 
 clobber
 ---
