@@ -271,11 +271,15 @@ sumo::proxy_port: 9090
 
 service_ensure
 ---
-```not_implemented```
+```
+not_implemented
+```
 
 service_enable
 ---
-```not_implemented```
+```
+not_implemented
+```
 
 sources_file
 ---
