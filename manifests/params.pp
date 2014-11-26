@@ -13,6 +13,7 @@ class sumo::params {
   $email              = undef
   $ephemeral          = undef
   $install_dir        = '/opt/SumoCollector'
+  $install_script     = 'sumo_install.sh'
   $install_script_dir = '/tmp'
   $override           = undef
   $password           = undef
@@ -27,11 +28,9 @@ class sumo::params {
 
   case $::architecture {
     'x86_64': {
-      $install_script = "${install_script_dir}/sumo64.sh"
       $download_url   = 'https://collectors.sumologic.com/rest/download/linux/64'
     }
     'x86': {
-      $install_script = "${install_script_dir}/sumo32.sh"
       $download_url   = 'https://collectors.sumologic.com/rest/download/linux/32'
     }
   }
