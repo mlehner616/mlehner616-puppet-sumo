@@ -15,12 +15,12 @@
   ],
   "operatingsystem_support": [
     {
-      "operatingsytem": "RedHat",
-      "operatingsytemrelease": ["6.0"]
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": ["6.0"]
     },
     {
-      "operatingsytem": "Amazon",
-      "operatingsytemrelease": ["2014.09"]
+      "operatingsystem": "Amazon",
+      "operatingsystemrelease": ["2014.09"]
     }
   ]
 }
