@@ -14,7 +14,7 @@ class sumo::install inherits sumo {
     group  => 'root',
   }->
   exec { 'Install sumo from local':
-    command => "${sumo::install_script_dir}/${sumo::install_script} -q",
+    command => "${sumo::install_script_dir}/${sumo::install_script} -q -dir \"${sumo::install_dir}\"",
     creates => $sumo::install_dir,
   }
 
