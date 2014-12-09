@@ -28,12 +28,16 @@ class sumo::params {
 
   case $::architecture {
     'x86_64': {
-      $download_url   = 'https://collectors.sumologic.com/rest/download/linux/64'
+      $download_url = 'https://collectors.sumologic.com/rest/download/linux/64'
     }
     'x86': {
-      $download_url   = 'https://collectors.sumologic.com/rest/download/linux/32'
+      $download_url = 'https://collectors.sumologic.com/rest/download/linux/32'
+    }
+    default: {
+      fail("ERROR - Unknown architecture: ${::architecture} - cannot apply \
+${module_name}")
     }
   }
 
-  $get_installer_cmd  = "/usr/bin/curl -o ${install_script} ${download_url}"
+  $get_installer_cmd = "/usr/bin/curl -o ${install_script} ${download_url}"
 }

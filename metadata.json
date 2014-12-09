@@ -1,16 +1,26 @@
 {
   "name": "mlehner616-sumo",
-  "version": "0.1.0",
-  "author": "mlehner616",
+  "version": "0.1.1",
+  "author": "Mike Lehner",
   "summary": "Installs Sumo Logic Collector",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "source": "https://github.com/mlehner616/mlehner616-puppet-sumo",
   "project_page": "https://github.com/mlehner616/mlehner616-puppet-sumo",
   "issues_url": "https://github.com/mlehner616/mlehner616-puppet-sumo/issues",
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
-      "version_range": ">= 1.0.0"
+      "version_range": ">=3.2.0 <5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsytem": "RedHat",
+      "operatingsytemrelease": ["6.0"]
+    },
+    {
+      "operatingsytem": "Amazon",
+      "operatingsytemrelease": ["2014.09"]
     }
   ]
 }
