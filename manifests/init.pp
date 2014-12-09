@@ -24,9 +24,7 @@ class sumo (
   $service_enable     = $sumo::params::service_enable,
   $sources_file       = $sumo::params::sources_file,
   $sources_template   = $sumo::params::sources_template
-) {
-
-  include sumo::params
+) inherits sumo::params {
 
   if ($email and $password) or ($access_id and $access_key) {
     if $email {
