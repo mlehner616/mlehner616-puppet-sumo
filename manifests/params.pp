@@ -27,9 +27,9 @@ class sumo::params {
   $sources_template   = 'sumo/sumo.json.erb'
 
   case $::architecture {
-    'x86_64': {
+    'x86_64','amd64': {
       $download_url = 'https://collectors.sumologic.com/rest/download/linux/64'
-    }
+    }    
     'x86': {
       $download_url = 'https://collectors.sumologic.com/rest/download/linux/32'
     }
